@@ -206,14 +206,7 @@ Python logic still verifies business requirements (that requests are within the 
 # Min 40 words.
 
 SETUP_COST_VALUE = """
-FILL ME IN
-
-Be specific. What can the Rasa CALM agent NOT do that LangGraph could?
-Is that a feature or a limitation for the confirmation use case?
-Think about: can the CALM agent improvise a response it wasn't trained on?
-Can it call a tool that wasn't defined in flows.yml?
-
-Rasa CALM agent can't improvise a response it wasn't trained on. That's a limitation form one hand as it can't handle unexpected situations, 
-but on the other hand it's more predictable and less hallucinates. All the business rules are checked by python logic.
-
+Rasa CALM agent can't improvise a response it wasn't trained on.
+That's a limitation as even if the question is related to booking, it can't handle unexpected situations, as it can't call a tool that wasn't defined in flows.yml.
+On the other hand it's more predictable and less hallucinates. All the business rules are checked by python logic.
 """
